@@ -12,5 +12,7 @@ How to run:
   Go to terminal and cd to this.
   Then type python main.py
 
+After starting the code go to the settings on the bottom right and click reload code.
+
 
 Enjoy 😃
