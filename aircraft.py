@@ -111,7 +111,7 @@ class Enemy(Entity):
             # Shoot occasionally
             self.fire_timer -= time.dt
             if self.fire_timer <= 0:
-                bullet = Bullet(position=self.world_position + self.forward * 1.2, direction=self.forward)
+                bullet = Bullet(position=self.world_position - self.forward * 1.2, direction=-self.forward)
                 self.fire_timer = self.fire_rate
 
 # Run the simulation
@@ -119,3 +119,4 @@ app = Ursina()
 aircraft = Aircraft()
 enemy = Enemy(target=aircraft)
 app.run()
+
